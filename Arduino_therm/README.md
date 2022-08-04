@@ -9,3 +9,5 @@ To illustrate through practice the different concepts of embedded programming in
 - A LED.
 
 ![](therm_arduino.jpg)
+
+![](therm_arduino_pcb.jpg)
