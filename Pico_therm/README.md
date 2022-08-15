@@ -1,6 +1,6 @@
 ## Raspberry Pi Pico thermostat experimentation board.
 
-To teach how to use MicroPython with several peripherals, I developped an board with the following interfaces :
+To teach how to use MicroPython with several peripherals, I developped a board with the following interfaces :
 
 - RP2040 Pico socket.
 - Thermostat interfaces:
@@ -9,9 +9,9 @@ To teach how to use MicroPython with several peripherals, I developped an board 
   - A LDR.
   - A potentiometer.
   - A LED.
-- A Neopixel header
-- An UART 0 Header
-- A µSD Header
+- A Neopixel header.
+- An UART 0 Header.
+- A µSD Header.
 
 ![](therm_rpi_pico.jpg)
 
