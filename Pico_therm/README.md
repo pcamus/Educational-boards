@@ -13,7 +13,7 @@ To teach how to use MicroPython with several peripherals, I developped an board 
 - An UART 0 Header
 - A µSD Header
 
-![](therm_ rpi_ pico.jpg)
+![](therm_rpi_pico.jpg)
 
 ![](therm_rpi_pico_pcb.jpg)
 
