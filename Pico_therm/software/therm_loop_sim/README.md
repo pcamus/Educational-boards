@@ -1,7 +1,7 @@
 ## Thermostat simulation.
 
 - [therm_loop_sim.py](therm_loop_sim.py)
-- [therm_loop_sim_uti.py](therm_loop_sim_uti.py)
+- [therm_loop_sim_util.py](therm_loop_sim_util.py)
 
 In this example simulation values are given one by one in the code (you need to re-run your code for each simulation).
 
