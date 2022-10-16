@@ -1,6 +1,8 @@
 ## Object orientation.
 
-This is a first introduction on how to transform an embedded peripheral device in a software object. We use the [joy_it I2C LCD module](https://joy-it.net/en/products/SBC-LCD16x2) as an example.
+This is a first introduction on how to transform an embedded peripheral device in a software object. 
+
+We use the [joy_it I2C LCD module](https://joy-it.net/en/products/SBC-LCD16x2) as an example.
 
 The description of the LCD object is the following:
 
