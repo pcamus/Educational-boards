@@ -12,4 +12,4 @@ A brief reminder of the object oriented programming in Python with a reference t
 
 A basic description of the I2C protocol is also given: [I2C.pdf](I2C.pdf).
 
-The file used for the LCD modules are [here](https://github.com/pcamus/Educational-boards/tree/main/Pico_therm/software/therm_loop_v1).
+The files used for the LCD modules are [here](https://github.com/pcamus/Educational-boards/tree/main/Pico_therm/software/therm_loop_v1).
