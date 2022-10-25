@@ -14,6 +14,10 @@ A basic description of the I2C protocol is also given: [I2C.pdf](I2C.pdf).
 
 The files used for the LCD modules are [here](https://github.com/pcamus/Educational-boards/tree/main/Pico_therm/software/therm_loop_v1).
 
+The scematic of the I2C to LCD interface board is the following:
+
+![](i2c_to_lcd_brd.jpg)
+
 A visualization with the logic analizer of the I2C transaction when writing a single character with [i2c_la.py](i2c_la.py) is given below:
 
 ![](i2c_lcd.jpg)
