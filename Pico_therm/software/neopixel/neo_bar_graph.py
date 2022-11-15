@@ -40,20 +40,14 @@ sm.active(1)
 # Array type, see : https://docs.python.org/3/library/array.html
 ar = array.array("I",[0]*NUM_LEDS) # type unsigned integer, initialized with a list of 0
 
-def pixels_dimming(ar):
-    dimmed_ar = array.array("I", [0]*NUM_LEDS)
-    for i,c in enumerate(ar):
-        r = int(((c >> 8) & 0xFF) * brightness)
-        g = int(((c >> 16) & 0xFF) * brightness)
-        b = int((c & 0xFF) * brightness)
-        dimmed_ar[i] = (g<<16) + (r<<8) + b
-    return dimmed_ar
-   
 
 # 24 bit data for each neopixel in the GRB order
-def pixel_set(color):
-    return (color[1]<<16) + (color[0]<<8) + color[2]
- 
+def pixel_set_and_dim(color, brightness):
+    green=int(color[1]*brightness)
+    red=int(color[0]*brightness)
+    blue=int(color[2]*brightness)
+    result= (green<<16)+(red<<8)+blue
+    return result
 
 # For the bar graph display with 8 pixels
 # Color values (add color if necessary)
@@ -85,12 +79,9 @@ def draw_bar_graph(level):
     BG_DISP= BG_LIST[level]
     print(level)
     for i, color in enumerate(BG_DISP):
-        ar[i]=pixel_set(color)
+        ar[i]=pixel_set_and_dim(color,brightness)
         
-    dimmed_ar=pixels_dimming(ar)
-    
-    sm.put(dimmed_ar, 8) # to the PIO FIFO
-
+    sm.put(ar, 8)
 
 if __name__ == "__main__":
     # execute only if run as the main module (i.e. not an import module)
@@ -98,4 +89,3 @@ if __name__ == "__main__":
         draw_bar_graph(i)
         time.sleep(1)
         
-    
