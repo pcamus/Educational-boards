@@ -5,4 +5,5 @@
 - [object_orientation](object_orientation) : the software counterpart of a hardware object.
 - [bit_banging](bit_banging): how to use software to generate bus signals.
 - [therm_timer](therm_timer): uses callback fubction called by a timer interrupt.
-- [neopixel](neopixel): interfacing neopixels with PIO code
+- [neopixel](neopixel): interfacing neopixels with PIO code.
+- [servo](servo): interfacing with a RC servo.
