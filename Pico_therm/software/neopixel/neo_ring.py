@@ -110,4 +110,16 @@ if __name__ == "__main__":
         brightness=brightness-0.01
         time.sleep(0.5)
         
-        
+    # Demo 5: Roadworks traffic lights
+    brightness=0.05
+    GREEN=(0,255,0)
+    while(True):
+        ring=[RED]*NUM_LEDS # complete ring
+        draw_ring(ring, NUM_LEDS)
+        time.sleep(6)
+        ring=[GREEN]*NUM_LEDS # complete ring
+        draw_ring(ring, NUM_LEDS)
+        time.sleep(4)
+        ring=[ORANGE_RED]*NUM_LEDS # complete ring
+        draw_ring(ring, NUM_LEDS)
+        time.sleep(2)
