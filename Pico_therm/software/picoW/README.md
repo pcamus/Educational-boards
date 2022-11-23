@@ -7,3 +7,5 @@ Then run the [blink.py](blink.py) program to test if all is fine. Note that the 
 To check the wifi connection, use the [test_wifi.py](test_wifi.py) code. The network identifier, API, keys and other passwords are kept separately, in a file called [secrets.py](secrets.py).
 
 To read a web page (here to call the Opneweathermap API) use the [owm_pico.py](owm_pico.py) code. And enjoy the weather conditions !
+
+*See here for web server application: https://projects.raspberrypi.org/en/projects/get-started-pico-w/2*
