@@ -7,3 +7,4 @@
 - [therm_timer](therm_timer): uses callback fubction called by a timer interrupt.
 - [neopixel](neopixel): interfacing neopixels with PIO code.
 - [servo](servo): interfacing with a RC servo.
+- [picoW](picoW): using Pico W with a WiFi connection to access web services.
